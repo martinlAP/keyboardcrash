@@ -2,14 +2,13 @@ import React from 'react';
 import {
   View,
 } from 'react-native';
-import { KeyboardProvider } from 'react-native-keyboard-controller';
+import Reanimated from 'react-native-reanimated';
 
 function App(): React.JSX.Element {
-
   return(
-    <KeyboardProvider>
+    <Reanimated.View style={{backgroundColor: 'red', flex: 1}}>
       <View></View>
-    </KeyboardProvider>
+    </Reanimated.View>
   )
   
 }
